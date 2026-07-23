@@ -1,0 +1,14 @@
+2026-07-23 14:01:37 | INFO     | ======================================================================
+2026-07-23 14:01:37 | INFO     | Job started
+2026-07-23 14:01:37 | INFO     | Arguments: input=data.csv config=config.yaml output=metrics.json log_file=run.log
+2026-07-23 14:01:37 | INFO     | Config loaded and validated: seed=42, window=5, version=v1
+2026-07-23 14:01:37 | INFO     | Deterministic seed set: numpy.random.seed(42)
+2026-07-23 14:01:37 | INFO     | Dataset loaded: 10000 rows, 7 columns from data.csv
+2026-07-23 14:01:37 | INFO     | Columns present: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-07-23 14:01:37 | INFO     | Computing rolling mean on 'close' with window=5
+2026-07-23 14:01:37 | INFO     | Generating binary signal: signal = 1 if close > rolling_mean else 0
+2026-07-23 14:01:37 | INFO     | First 4 row(s) fall within the warm-up window and have no rolling mean / signal (excluded from signal_rate)
+2026-07-23 14:01:37 | INFO     | Metrics summary: rows_processed=10000, signal_rate=0.4991, latency_ms=69ms
+2026-07-23 14:01:37 | INFO     | Metrics written to metrics.json
+2026-07-23 14:01:37 | INFO     | Job finished: status=success
+2026-07-23 14:01:37 | INFO     | ======================================================================
